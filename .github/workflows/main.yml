@@ -28,7 +28,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Install dependencies
-        run: yarn --prefer-offline && yarn blogs:build
+        run: yarn --prefer-offline && yarn build
 
       - name: Run deploy.sh
         uses: JamesIves/github-pages-deploy-action@4.1.1 # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
